@@ -29,6 +29,10 @@ jobs:
       - name: Start workflow message
         run: echo "Now running build workflow."
 
+      # self defined command
+      - name: Output a message
+        run: echo "Action complete!"
+      
       # Runs a set of commands using the runners shell
       - name: Ending workflow message
         run: |
