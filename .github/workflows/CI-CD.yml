@@ -1,0 +1,13 @@
+name: CI-CD
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install dependencies
+        run: npx yarn
+      - name: build
+        run: npx yarn build
